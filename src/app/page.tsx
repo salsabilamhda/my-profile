@@ -4,7 +4,7 @@ import { Cpu, Globe, Code2, BookOpen, Layers, Database, Smartphone } from 'lucid
 export default function HomePage() {
   const studentInfo = {
     name: "Salsabila Mahda Runisha",
-    id: "214172XXXX", // Sesuaikan dengan NIM Polinema-mu
+    id: "2141720257",
     role: "Full-stack Developer & IoT Enthusiast",
     bio: "Mahasiswi Teknik Informatika di Politeknik Negeri Malang yang berfokus pada pengembangan aplikasi web modern, sistem cerdas berbasis IoT, dan pengolahan data.",
     interests: [
@@ -23,20 +23,17 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#020617] text-slate-200 flex items-center justify-center p-4 md:p-8 selection:bg-cyan-500/30 overflow-hidden relative">
-      
-      {/* Background Decor - Animated Glow */}
+
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-cyan-600/10 rounded-full blur-[140px] animate-pulse" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-indigo-600/10 rounded-full blur-[140px] animate-pulse delay-700" />
       </div>
 
       <div className="max-w-3xl w-full bg-slate-900/40 backdrop-blur-2xl border border-slate-800/60 rounded-[2.5rem] p-8 md:p-14 shadow-2xl z-10 relative overflow-hidden">
-        
-        {/* Subtle Grid Pattern Overlay */}
+
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
 
         <div className="relative z-10">
-          {/* Header Section */}
           <header className="space-y-6 mb-10 text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 text-cyan-400 text-[10px] font-bold tracking-[0.2em] uppercase">
               <span className="relative flex h-2 w-2">
@@ -58,7 +55,6 @@ export default function HomePage() {
             </div>
           </header>
 
-          {/* Stats Bar */}
           <div className="grid grid-cols-3 gap-4 mb-10 py-6 border-y border-slate-800/50">
             {studentInfo.stats.map((stat) => (
               <div key={stat.label} className="text-center">
@@ -68,18 +64,15 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* About Section */}
           <section className="mb-12">
             <h2 className="text-xs font-bold text-slate-500 uppercase tracking-[0.3em] mb-4 flex items-center gap-3">
                Brief Introduction
             </h2>
-            {/* Perbaikan ESLint: menggunakan &quot; untuk tanda kutip */}
             <p className="text-slate-400 leading-relaxed text-lg font-light italic">
               &quot;{studentInfo.bio}&quot;
             </p>
           </section>
 
-          {/* Interests Section */}
           <section className="mb-12">
             <h2 className="text-xs font-bold text-slate-500 uppercase tracking-[0.3em] mb-6 flex items-center gap-3">
               <Code2 size={14} className="text-cyan-500" /> Technology Stack
