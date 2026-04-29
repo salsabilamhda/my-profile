@@ -4,14 +4,13 @@ import { Cpu, Globe, Code2, BookOpen, Layers, Database, Smartphone } from 'lucid
 export default function HomePage() {
   const studentInfo = {
     name: "Salsabila Mahda Runisha",
-    id: "2141720257",
+    id: "2341720257",
     role: "Full-stack Developer & IoT Enthusiast",
-    bio: "Mahasiswi Teknik Informatika di Politeknik Negeri Malang yang berfokus pada pengembangan aplikasi web modern, sistem cerdas berbasis IoT, dan pengolahan data.",
+    bio: "Mahasiswi Teknik Informatika di Politeknik Negeri Malang",
     interests: [
       { name: "Next.js", icon: <Layers size={14} /> },
       { name: "Firebase", icon: <Database size={14} /> },
       { name: "Flutter", icon: <Smartphone size={14} /> },
-      { name: "ESP32 / IoT", icon: <Cpu size={14} /> },
       { name: "Data Analysis", icon: <Globe size={14} /> }
     ],
     stats: [
